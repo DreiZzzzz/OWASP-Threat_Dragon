@@ -53,7 +53,11 @@
               },
               {
                 "x": 480,
-                "y": 220
+                "y": 180
+              },
+              {
+                "x": 520,
+                "y": 310
               }
             ]
           },
@@ -176,11 +180,11 @@
           },
           {
             "position": {
-              "x": 630,
-              "y": 350
+              "x": 640,
+              "y": 340
             },
             "size": {
-              "width": 170,
+              "width": 140,
               "height": 140
             },
             "attrs": {
@@ -574,7 +578,7 @@
             "labels": [
               "User Credentials"
             ],
-            "id": "7c45453b-9ace-4ede-aca2-49180a5bc331",
+            "id": "cd9b89a3-46c6-4974-bf49-1e7ffb081d95",
             "source": {
               "cell": "bf75a6da-4a58-4ae3-87e3-be83b39f7839",
               "port": "6a7efd4b-2084-4915-bf6f-1e2c8a0b41b7"
@@ -583,7 +587,64 @@
               "cell": "b7173a49-d7ac-4268-8f40-747c34fa11d1",
               "port": "4ac47ab4-c593-4046-8645-d3fe6e23793f"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 500,
+                "y": 380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User is Authenticated",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User is Authenticated"
+            ],
+            "id": "e470c750-3c53-4062-bbd5-8a29058eb859",
+            "source": {
+              "cell": "b7173a49-d7ac-4268-8f40-747c34fa11d1",
+              "port": "4ac47ab4-c593-4046-8645-d3fe6e23793f"
+            },
+            "target": {
+              "cell": "bf75a6da-4a58-4ae3-87e3-be83b39f7839",
+              "port": "6a7efd4b-2084-4915-bf6f-1e2c8a0b41b7"
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 440
+              }
+            ]
           },
           {
             "position": {
