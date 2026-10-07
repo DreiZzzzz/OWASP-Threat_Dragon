@@ -893,7 +893,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Authorization \nProvider"
+                "text": "LDAP"
               },
               "body": {
                 "stroke": "#333333",
@@ -989,7 +989,7 @@
             "id": "c6ac0ee6-10e8-4c8f-88bf-99b45c26aff7",
             "data": {
               "type": "tm.Process",
-              "name": "Authorization \nProvider",
+              "name": "LDAP",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
