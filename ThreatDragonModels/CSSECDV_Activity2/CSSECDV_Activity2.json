@@ -621,7 +621,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Insert Feedback Comments",
+              "name": "Feedback Comments",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -635,7 +635,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Insert Feedback Comments"
+              "Feedback Comments"
             ],
             "id": "45e04bee-0a3e-42fd-95f8-b8a4b4ec6a4a",
             "source": {
@@ -737,7 +737,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Feedback Comments Saved",
+              "name": "Feedback Save Result",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -751,7 +751,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Feedback Comments Saved"
+              "Feedback Save Result"
             ],
             "id": "40459d5f-4917-41c4-ba45-481ea0e292a2",
             "source": {
