@@ -59,7 +59,7 @@
           },
           {
             "position": {
-              "x": 340,
+              "x": 240,
               "y": 370
             },
             "size": {
@@ -296,8 +296,8 @@
           },
           {
             "position": {
-              "x": 620,
-              "y": 40
+              "x": 630,
+              "y": 72.00000000000011
             },
             "size": {
               "width": 170,
@@ -537,6 +537,173 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "User Credentials"
+            ],
+            "id": "7c45453b-9ace-4ede-aca2-49180a5bc331",
+            "source": {
+              "cell": "bf75a6da-4a58-4ae3-87e3-be83b39f7839",
+              "port": "6a7efd4b-2084-4915-bf6f-1e2c8a0b41b7"
+            },
+            "target": {
+              "cell": "b7173a49-d7ac-4268-8f40-747c34fa11d1",
+              "port": "4ac47ab4-c593-4046-8645-d3fe6e23793f"
+            },
+            "vertices": []
+          },
+          {
+            "position": {
+              "x": 1044,
+              "y": 72.00000000000011
+            },
+            "size": {
+              "width": 170,
+              "height": 140
+            },
+            "attrs": {
+              "text": {
+                "text": "Authorization \nProvider"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "89238d5c-4dd2-43e6-91a3-95467228e635"
+                },
+                {
+                  "group": "right",
+                  "id": "9988d3ca-84dd-4a45-b2d7-fd7ac524373f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "79880a1f-6a85-4c01-8ff0-0fdf49a46376"
+                },
+                {
+                  "group": "left",
+                  "id": "4ac47ab4-c593-4046-8645-d3fe6e23793f"
+                }
+              ]
+            },
+            "id": "c6ac0ee6-10e8-4c8f-88bf-99b45c26aff7",
+            "data": {
+              "type": "tm.Process",
+              "name": "Authorization \nProvider",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 11
           }
         ]
       }
