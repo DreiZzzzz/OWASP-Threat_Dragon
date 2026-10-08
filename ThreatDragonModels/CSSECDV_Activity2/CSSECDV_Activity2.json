@@ -1215,6 +1215,9 @@
               "height": 80
             },
             "attrs": {
+              "text": {
+                "text": "LDAP"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -1312,7 +1315,7 @@
             "zIndex": 15,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "LDAP",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
