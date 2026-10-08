@@ -196,8 +196,8 @@
                 "text": "Web \nApplication"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -294,12 +294,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "c41d9e93-bb80-458c-8332-b2c07a9a67b3",
+                  "title": "Web Application Spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "The web application may be spoofed by an attacker and this may lead to unauthorized access to the browser client.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -439,11 +461,13 @@
                 "text": "SQL Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -540,13 +564,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a8afdc3e-4b86-45ee-8f54-e1a7b6d53ab5",
+                  "title": "Malicious SQL Code Injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "SQL injection is an attack in which malicious code is inserted into strings that are later passed to an instance of SQL Server for parsing and execution.",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1025,18 +1069,18 @@
             "labels": [
               "Privilege Verification Request"
             ],
-            "id": "2fff3902-69e3-4d91-904f-80e54a07f26b",
+            "id": "87e9344b-ddbe-46ec-8f19-eeb451055b38",
             "source": {
               "cell": "f267d4c4-1b00-4f73-a7fd-5686770dcb6e",
               "port": "9988d3ca-84dd-4a45-b2d7-fd7ac524373f"
             },
             "target": {
-              "cell": "69ca3c8a-7680-4984-8d35-753855d4e7f6",
-              "port": "badf0432-37cb-4814-80ba-59061701993c"
+              "cell": "60d5fc8a-a2a2-409a-b51f-b5937525c3f9",
+              "port": "d7dd6b61-6f40-40c0-ad7b-385ad34aeeb5"
             },
             "vertices": [
               {
-                "x": 970,
+                "x": 1010,
                 "y": 80
               }
             ]
@@ -1077,10 +1121,10 @@
             "labels": [
               "Privilege Verification Result"
             ],
-            "id": "1fe7258b-9675-4676-8db2-78bd5e5a4486",
+            "id": "eaba11f3-04e0-4827-8597-88f3910f3abc",
             "source": {
-              "cell": "69ca3c8a-7680-4984-8d35-753855d4e7f6",
-              "port": "badf0432-37cb-4814-80ba-59061701993c"
+              "cell": "60d5fc8a-a2a2-409a-b51f-b5937525c3f9",
+              "port": "d7dd6b61-6f40-40c0-ad7b-385ad34aeeb5"
             },
             "target": {
               "cell": "f267d4c4-1b00-4f73-a7fd-5686770dcb6e",
@@ -1088,8 +1132,8 @@
             },
             "vertices": [
               {
-                "x": 1000,
-                "y": 180
+                "x": 1010,
+                "y": 170
               }
             ]
           },
@@ -1163,25 +1207,25 @@
           },
           {
             "position": {
-              "x": 1172,
-              "y": 100
+              "x": 1214,
+              "y": 110
             },
             "size": {
               "width": 140,
-              "height": 100
+              "height": 80
             },
             "attrs": {
-              "text": {
-                "text": "LDAP"
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
               },
-              "body": {
-                "stroke": "#333333",
+              "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "actor",
+            "shape": "store",
             "ports": {
               "groups": {
                 "top": {
@@ -1248,41 +1292,45 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "5bbd5ab2-e92e-41db-a2ce-5c5a76369cec"
+                  "id": "5801bfa6-5153-4eec-94d3-843948c49aaa"
                 },
                 {
                   "group": "right",
-                  "id": "6a7efd4b-2084-4915-bf6f-1e2c8a0b41b7"
+                  "id": "b0a203f3-b6b2-467e-a9ca-c89528a7957c"
                 },
                 {
                   "group": "bottom",
-                  "id": "dcfc86ec-2713-4f00-9bca-10839a7ead46"
+                  "id": "02bb8038-4376-4dce-99f6-a283648e4a2d"
                 },
                 {
                   "group": "left",
-                  "id": "badf0432-37cb-4814-80ba-59061701993c"
+                  "id": "d7dd6b61-6f40-40c0-ad7b-385ad34aeeb5"
                 }
               ]
             },
-            "id": "69ca3c8a-7680-4984-8d35-753855d4e7f6",
+            "id": "60d5fc8a-a2a2-409a-b51f-b5937525c3f9",
+            "zIndex": 15,
             "data": {
-              "type": "tm.Actor",
-              "name": "LDAP",
+              "type": "tm.Store",
+              "name": "Store",
               "description": "",
-              "isTrustBoundary": false,
               "outOfScope": false,
+              "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "providesAuthentication": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 14
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 2
   }
 }
